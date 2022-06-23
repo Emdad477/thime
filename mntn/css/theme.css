@@ -1,0 +1,120 @@
+
+.figar {
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid #565656;
+    padding: 20px 40px;
+    border-radius: 60px;
+    color: #000;
+}
+.figar:hover {
+    background: #2639ED;
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+/*-------------------
+  === menu-area ====
+ --------------------*/
+.mainmenu-area {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+    width: 100%;
+    padding: 30px 0px;
+    transition: 0.3s;  
+}
+.mainmenu-area .nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+.primary-menu {
+    margin-left: 40px;
+}
+
+.primary-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.primary-menu ul li {
+    padding: 12px 28px;
+    position: relative;   
+}
+
+.primary-menu ul li a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+    display: block;
+}
+    
+.primary-menu ul li::after {
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #43B6FF;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: 0.3s; 
+}
+.primary-menu ul li:hover::after {
+    width: 100%;   
+}
+.menu-triger {
+    border: none;
+    background: none;
+    position: relative;
+}
+
+.menu-triger .bar {
+    width: 25px;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
+    margin: 6px;
+    transition: 0.5s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-triger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 5px);
+}
+
+.menu-triger.active .bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu-triger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -4px);
+}
+
+
+
+.header-area {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.main-title {
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: 700;
+    padding-top: 100px;
+}
+.header-desc .desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #565656;
+    padding: 30px 0px;
+}
